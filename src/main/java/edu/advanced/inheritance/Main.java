@@ -1,29 +1,26 @@
 package edu.advanced.inheritance;
 
-import java.sql.Connection;
-import java.util.Date;
-
 public class Main {
 
-    public static void mostrarArea(Figura figura) {
-        System.out.println("El area de la figura es: " + figura.area());
+    public static void showArea(Figure figura) {
+        System.out.println("El showArea de la figura es: " + figura.showArea());
     }
     
     public static void main(String[] args) {
-        // Temporal empleadoTemporal = new Temporal("Michael Jackson", 10, "111", 200.00, 
+        // TemporalEmployee empleadoTemporal = new TemporalEmployee("Michael Jackson", 10, "111", 200.00,
         // new Date(), new Date());
         
         // //System.out.println("Nombre: " + );
-        // empleadoTemporal.mostrar();
+        // empleadoTemporal.display();
 
-        Cuadrado cuadro = new Cuadrado(1,2,3);
-        System.out.println("Area: " + cuadro.area());
+        Square cuadro = new Square(1,2,3);
+        System.out.println("Area: " + cuadro.showArea());
 
-        Circulo c = new Circulo(1, 2, 3);
-        System.out.println("Area del circulo: " + c.area());
+        Circle c = new Circle(1, 2, 3);
+        System.out.println("Area del circulo: " + c.showArea());
 
-        mostrarArea(cuadro);
-        mostrarArea(c);
+        showArea(cuadro);
+        showArea(c);
         
                 
     }
